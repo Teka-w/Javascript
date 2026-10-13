@@ -1,3 +1,5 @@
+// -1
+
 // const firstName = "Temuulen"
 
 // console.log(firstName);
@@ -592,3 +594,438 @@
 
 // console.log(`${year} year ${month} month`);
 
+// -2
+
+
+// let  number = 5;
+
+// if (number > 0 ){
+//     console.log("Эерэг");
+// } else if (number < 0){
+//     console.log("Сөрөг");
+// } else {
+//     console.log("Тэг");
+// }
+
+// ***
+
+
+// let age = 20
+
+// if (0 <= age && 12 >= age){
+//     console.log("Хүүхэд");
+// } else if (13 <= age && 17 >= age){
+//     console.log("Өсвөр нас");
+// } else if (18 <= age){
+//     console.log("Насанд хүрсэн");
+// } else  {
+//     console.log("Буруу нас");   
+// }
+
+// ***
+
+// let score = 100
+
+// if (90 <= score && 100 >= score){
+//     console.log("A");
+// } else if (80 <= score && 89 >= score){
+//     console.log("B");
+// } else if (70 <= score && 79 >= score){
+//     console.log("C");
+// } else if (60 <= score && 69 >= score){
+//     console.log("D");
+// } else if (0 <= score && 59 >= score){
+//     console.log("F");
+// } else {
+//     console.log("Буруу оноо");
+// }
+
+// ***
+
+// let temperature = 25
+
+// if (0 >= temperature){
+//     console.log("Хүйтэн");
+// } else if ( 0 <= temperature && 20 >= temperature){
+//     console.log("Сэрүүн");   
+// } else {
+//     console.log("Дулаан");
+// }
+
+// ***
+
+// let a = 4
+// let b = 4
+
+// if (a > b){
+//     console.log("Эхний тоо их");
+// } else if (b > a){
+//     console.log("Хоёр дахь тоо их");
+// } else {
+//     console.log("Тэнцүү");
+// }
+
+// ***
+
+// let totalmoney = 150000
+
+// if (totalmoney >= 200000){
+//     console.log(totalmoney * 0.8);
+// } else if (100000 <= totalmoney && 200000 >= totalmoney){
+//     console.log(totalmoney * 0.9);
+// } else {
+//     console.log("хямдралгүй");
+// }
+
+// ***
+    
+// let battery = 100
+
+// if(0 === battery){
+//     console.log("Унтарсан");
+// } else if (1 <= battery && 19 >= battery){
+//     console.log("Цэнэг бага");
+// } else if (20 <= battery && 99 >= battery){
+//     console.log("Цэнэг хэвийн");
+// } else if (100 === battery){
+//     console.log("Бүрэн цэнэгтэй");
+// } else {
+//     console.log("Буруу утга");
+// }
+
+// ***
+
+// let color = "ногоон"
+
+// if ("улаан" === color){
+//     console.log("Зогс");
+// } else if ("шар" === color){
+//     console.log("Хүлээ");
+// } else if ("ногоон" === color){
+//     console.log("Яв");
+// } else {
+//     console.log("Буруу өнгө");
+// }
+
+// ***
+
+// let distance = 2
+
+// if (0 < distance && 3 >= distance){
+//     console.log(3000);
+// } else if (3 < distance && 10 >= distance){
+//     console.log(5000);
+// } else if (10 < distance){
+//     console.log(8000);
+// } else {
+//     console.log("Буруу зай");
+// }
+
+// ***
+
+// let secret = 7
+// let guess = 7
+
+// if (guess < secret){
+//     console.log("Илүү их тоо сонгоорой");
+// } else if (secret < guess){
+//     console.log("Илүү бага тоо сонгоорой");
+// } else {
+//     console.log("Зөв таалаа!");
+// }
+
+// ***
+
+// let number = 23
+
+// if (number % 5 === 0){
+//     console.log("yes");
+// } else {
+//     console.log("no");
+// }
+
+// ***
+
+// let number = 9
+
+// if (number % 2 === 0){
+//     console.log("even");
+// } else {
+//     console.log("odd");
+// }
+
+// ***
+
+// let number = 15
+
+// if (number % 3 === 0 && number % 5 === 0){
+//     console.log("FizzBuzz");
+// } else if (number % 3 === 0){
+//     console.log("Fizz");
+// } else if (number % 5 === 0){
+//     console.log("Buzz");
+// } else {
+//     console.log(number);
+// }
+
+// ***
+
+// let number = 99
+
+// if (number > 100){
+//     console.log(number = 100);
+// } else {
+//     console.log(number);
+// }
+
+// ***
+
+// let number = -90
+
+// if (number < 0){
+//     console.log(Math.abs(number));
+// } else {
+//     console.log(number);
+// }
+
+// ***
+
+// let carNumber = 4815; 
+// let lastDigit = carNumber % 10;
+// let day = "";
+
+// if (lastDigit === 1 || lastDigit === 6) {
+//     day = "Даваа";
+// } else if (lastDigit === 2 || lastDigit === 7) {
+//     day = "Мягмар";
+// } else if (lastDigit === 3 || lastDigit === 8) {
+//     day = "Лхагва";
+// } else if (lastDigit === 4 || lastDigit === 9) {
+//     day = "Пүрэв";
+// } else if (lastDigit === 5 || lastDigit === 0) {
+//     day = "Баасан";
+// }
+// console.log(day);
+
+// ***
+
+// let weekNumber = 7
+// let weekName
+
+// if (weekNumber == 1){
+//     weekName = "Monday"
+// } else if (weekNumber == 2){
+//     weekName = "Tuesday"
+// } else if (weekNumber == 3){
+//     weekName = "Wednesday"
+// } else if (weekNumber == 4){
+//     weekName = "Thursday"
+// } else if (weekNumber == 5){
+//     weekName = "Friday"
+// } else if (weekNumber == 6){
+//     weekName = "Saturday"
+// } else if (weekNumber == 7){
+//     weekName = "Sunday"
+// } else {
+//     weekName = "Буруу дугаар";
+// }
+// console.log(weekName);
+
+// ***
+
+// let a = 8
+// let b = 4
+// let c = 6
+
+// if (a + b > c && a + c > b && b + c > a){
+//     console.log("YES");
+// } else {
+//     console.log("NO");
+// }
+
+// ***
+
+// let year = 2020
+
+// if (year >= 1896 && (year - 1896) % 4 === 0){
+//     console.log("Зуны олимпийн жил");
+// } else {
+//     console.log("Зуны олимпийн жил биш");
+// }
+
+// ***
+
+// let year = 1995
+
+// if (year >= 1924 && (year - 1924) % 4 === 0){
+//     console.log("Өвлийн олимпийн жил");
+// } else {
+//     console.log("Өвлийн олимпийн жил биш");
+// }
+
+// ***
+
+// let month = 12
+
+// switch (month){
+//     case 12:
+//     case 1:
+//     case 2:
+//         console.log("Өвөл");
+//         break;
+//     case 3:    
+//     case 4:    
+//     case 5:
+//         console.log("Хавар");
+//         break;
+//     case 6:        
+//     case 7:        
+//     case 8:
+//         console.log("Зун");
+//         break;
+//     case 9:     
+//     case 10:     
+//     case 11:
+//         console.log("Намар");
+//         break;
+//     default:
+//         console.log("Буруу сарын дугаар");
+// }
+
+// ***
+
+// let fuelType = 92
+// let liters = 15
+
+// switch(fuelType){
+//     case 92:
+//         console.log(liters * 5500);
+//         break;
+//     case 95:
+//         console.log(liters * 7000);
+//         break;
+//     case "D":
+//         console.log(liters * 6000);
+//         break;
+//     default:
+//         console.log("Шатахууны төрөл буруу");
+// }
+
+// ***
+
+// let a = 9
+// let b = 6
+// let c = 6
+
+// let isbuurah = a > b && b > c ? "true" : "false"
+// {console.log(isbuurah);
+// }
+
+// ***
+
+// let a = 6
+// let b = 7
+// let c = 6
+
+// let istentsuu = a === b && b === c ? "true" : "false"
+// {console.log(istentsuu);
+// }
+
+// ***
+
+// let a = -3
+// let b = 5
+// let c = 7
+
+// let iseyreg = a > 0 && b > 0 && c > 0 ? "true" : "false"
+// {console.log(iseyreg);
+// }
+
+// ***
+
+// let a = 4
+// let b = 6
+// let c = 7
+
+// let istegsh = a % 2 == 0 && b % 2 == 0 && c % 2 == 0 ? "true" : "false"
+// {console.log(istegsh);
+// }
+
+// ***
+
+// let a = 1
+// let b = 5
+// let c = 7
+
+// let issurug = a < 0 || b < 0 || c < 0 ? "true" : "false"
+// {console.log(issurug);
+// }
+
+// ***
+
+// let number = 34
+// let tens = Math.floor(number / 10)
+// let ones = number % 10
+// let swapped = (ones * 10) + tens
+// console.log(swapped);
+
+// ***
+
+// let number = 54
+// let tens = Math.floor(number / 10)
+// let ones = number % 10
+// let urjih = tens * ones
+// console.log(urjih);
+
+// ***
+
+// let year = 2020
+
+// if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)){
+//     console.log("Өндөр жил");
+// } else {
+//     console.log("Өндөр жил биш");
+// }
+
+// ***
+    
+// const elapsed = new Date();
+// const years = elapsed.getFullYear();
+// const months = elapsed.getMonth() +1;
+// const day = elapsed.getDate();
+// const hours = elapsed.getHours();
+// const minutes = elapsed.getMinutes();
+// const mill = elapsed.getMilliseconds();
+
+// console.log(years - 1970, months, day, hours, minutes, mill);
+
+// ***
+    
+// let a = 6
+// let b = 1
+// let c = 9
+// let hamgiinbaga = a
+
+// if (b < hamgiinbaga){
+//     hamgiinbaga = b
+// } if (c < hamgiinbaga){
+//     hamgiinbaga = c
+// } console.log(hamgiinbaga);
+
+// ***
+
+// let a = 7
+// let b = 9
+// let c = 5
+// let min = a
+// let max = b
+// if (b < min){
+//     min = b
+// } if (c < min){
+//     min = c
+// } if (a > max){
+//     max = a
+// } if (c > max){
+//     max = c
+// }
+// console.log(max - min);
