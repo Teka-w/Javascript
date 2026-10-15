@@ -20,7 +20,7 @@
 // ***
 
 // const lastName = "Бат"
-// const firstName = "Ану" 
+// const firstName = "Ану"
 
 // console.log(`${lastName} ${firstName}`);
 
@@ -596,7 +596,6 @@
 
 // -2
 
-
 // let  number = 5;
 
 // if (number > 0 ){
@@ -609,7 +608,6 @@
 
 // ***
 
-
 // let age = 20
 
 // if (0 <= age && 12 >= age){
@@ -619,7 +617,7 @@
 // } else if (18 <= age){
 //     console.log("Насанд хүрсэн");
 // } else  {
-//     console.log("Буруу нас");   
+//     console.log("Буруу нас");
 // }
 
 // ***
@@ -647,7 +645,7 @@
 // if (0 >= temperature){
 //     console.log("Хүйтэн");
 // } else if ( 0 <= temperature && 20 >= temperature){
-//     console.log("Сэрүүн");   
+//     console.log("Сэрүүн");
 // } else {
 //     console.log("Дулаан");
 // }
@@ -678,7 +676,7 @@
 // }
 
 // ***
-    
+
 // let battery = 100
 
 // if(0 === battery){
@@ -790,7 +788,7 @@
 
 // ***
 
-// let carNumber = 4815; 
+// let carNumber = 4815;
 // let lastDigit = carNumber % 10;
 // let day = "";
 
@@ -873,18 +871,18 @@
 //     case 2:
 //         console.log("Өвөл");
 //         break;
-//     case 3:    
-//     case 4:    
+//     case 3:
+//     case 4:
 //     case 5:
 //         console.log("Хавар");
 //         break;
-//     case 6:        
-//     case 7:        
+//     case 6:
+//     case 7:
 //     case 8:
 //         console.log("Зун");
 //         break;
-//     case 9:     
-//     case 10:     
+//     case 9:
+//     case 10:
 //     case 11:
 //         console.log("Намар");
 //         break;
@@ -988,7 +986,7 @@
 // }
 
 // ***
-    
+
 // const elapsed = new Date();
 // const years = elapsed.getFullYear();
 // const months = elapsed.getMonth() +1;
@@ -1000,7 +998,7 @@
 // console.log(years - 1970, months, day, hours, minutes, mill);
 
 // ***
-    
+
 // let a = 6
 // let b = 1
 // let c = 9
@@ -1029,3 +1027,469 @@
 //     max = c
 // }
 // console.log(max - min);
+
+// -3
+
+// const student = {
+//     name: "Otgon",
+//     age: 20,
+//     isStudent: true
+// };
+// console.log(student);
+
+// ***
+
+// const fruits = ["Apple", "Banana", "Orange"];
+// console.log(fruits);
+
+// ***
+
+// const person = {
+//     name: "Teka",
+//     age: 20
+// };
+// console.log(person.name);
+
+// ***
+
+// const colors = ["Red", "Green", "Blue"];
+// console.log(colors[0]);
+
+// ***
+
+// const product = {
+//     name: "Devter",
+//     price: 2500
+// }
+// console.log(product["price"]);
+
+// ***
+
+// const student = ["Bat", "Anu", "Bold"];
+// console.log(student[1]);
+
+// ***
+
+// const person = {
+//     name: "Bataa",
+//     age: 18
+// }
+// console.log(`${person.name} ${person.age} nastai.`);
+
+// ***
+
+// const animals = ["Dog", "Cat", "Rabbit", "Horse"];
+// console.log(animals.length);
+
+// ***
+
+// const numbers = [10, 20, 30, 40, 50];
+// console.log(numbers[numbers.length -1]);
+
+// ***
+
+// const student = {
+//     name: "Saraa",
+//     age: 17,
+//     grade: 11
+// };
+// const key = "grade";
+// console.log(student[key]);
+
+// ***
+
+// const fruits = ["Apple", "Banana", "Orange"];
+// fruits[1] = "Grape"
+// console.log(fruits);
+
+// ***
+
+// const person = {
+//     name: "Bold",
+//     age: 17
+// };
+// person.isAdult = person.age >= 18 ? true : false;
+// console.log(person);
+
+// ***
+
+// const books = ["Math", "English"];
+// books.push("Programm");
+// console.log(books);
+
+// ***
+
+// const student = {
+//     name: "Anu",
+//     age: 15
+// }
+// student.grade = 9;
+// console.log(student);
+
+// ***
+
+// const player = {
+//     name: "Temuulen",
+//     score: 200
+// }
+// if (player.score >= 100) {
+//     player.score += 50;
+// } else {
+//     player.score += 10;
+// }
+// console.log(player.score);
+
+// ***
+
+// const items = ["Devter", "Bal", "Balluur"];
+// const removedItem = items.pop();
+// console.log(items, removedItem);
+
+// ***
+
+// const queue = ["Bat", "Anu"]
+// queue.unshift("Bold")
+
+// console.log(queue);
+
+// ***
+
+// const lamp = {
+//     isON: true
+// }
+// if (lamp.isON){
+//     lamp.isON = false;
+//     console.log("Гэрлийг унтраалаа");
+// } else {
+//     lamp.isON = true;
+//     console.log("Гэрлийг асаалаа");
+// }
+
+// console.log(lamp.isON);
+
+// ***
+
+// const queue = ["Bold", "Bat", "Anu"]
+// const firstPerson = queue.shift();
+
+// console.log(queue, firstPerson);
+
+// ***
+
+// const user = {
+//     name: "Bat",
+//     isVerified: true,
+//     temporaryCode: "ABC123"
+// }
+// if (user.isVerified){
+//     delete user.temporaryCode
+// } else
+//     {console.log("Эхлээд бүртгэлээ баталгаажуулна уу");}
+
+// console.log(user);
+
+// ***
+
+// const product = {
+//     name: "Devter",
+//     price: 5000,
+//     quantity: 4
+// }
+
+// console.log(product.price * product.quantity);
+
+// ***
+
+// const rectangle = {
+//     width: 5,
+//     height: 8
+// }
+// rectangle.area = rectangle.width * rectangle.height;
+
+// console.log(rectangle);
+
+// ***
+
+// const scores = {
+//     math: 80,
+//     english: 90,
+//     programming: 100
+// }
+// console.log((scores.math + scores.english + scores.programming) / 3);
+
+// ***
+
+// const product = {
+//     price: 50000,
+//     discountPercent: 50
+// }
+// if (product.discountPercent > 0){
+//     product.finalPrice = product.price - (product.price * product.discountPercent / 100)
+// } else {
+//     product.finalPrice = product.price
+// }
+// console.log(product.finalPrice);
+
+// ***
+
+// const account = {
+//     owner: "Bold",
+//     balance: 70000
+//  };
+//  const withdrawAmount = 60000;
+//  if (account.balance >= withdrawAmount){
+//     account.balance -= withdrawAmount
+//     console.log("Гүйлгээ амжилттай");
+//  } else {
+//     console.log("Үлдэгдэл хүрэлцэхгүй");
+//  }
+//  console.log(account.balance);
+
+//  ***
+
+// const product = {
+//     name: "Bal",
+//     stock: 5
+// }
+// product.uldegdel = product.stock > 0 ? "Бэлэн байна": "Дууссан";
+
+// console.log(product.uldegdel);
+
+// ***
+
+// const numbers = [15, 25, 10]
+// const sum = numbers[0] + numbers[1] + numbers[2]
+
+// console.log(sum);
+
+// ***
+
+// const scores = [80, 90, 100]
+// const dundaj = (scores[0] + scores[1] + scores[2]) / 3
+
+// console.log(dundaj);
+
+// ***
+
+// const customer = {money: 8000};
+// const product = {price: 8000, stock: 3};
+
+// if (customer.money >= product.price && product.stock > 0){
+//     console.log("Авч болно");
+// } else {
+//     console.log("Авч болохгүй");
+// }
+
+// ***
+
+// const student = {
+//     name: "Saraa",
+//     score: 100
+// }
+// if(student.score >= 90){
+//     console.log("Маш сайн");
+// } else if (student.score >= 60 && student.score < 90){
+//     console.log("Тэнцсэн");
+// } else {
+//     console.log("Тэнцээгүй");
+// }
+
+// ***
+
+// const student = {
+//     name: "Bat",
+//     age: 16
+// }
+// console.log("age" in student);
+// console.log("email" in student);
+
+// ***
+
+// const student = {
+//     name: "Anu",
+//     address: {city: "Улаанбаатар", district: "Хан-Уул"}
+// }
+
+// console.log(student.address.city);
+
+// ***
+
+// const person = {
+//     name: "Bold",
+//     address: {city: "", district: "Хан-Уул"}
+// }
+// if (person.address.city){
+//     console.log(person.address.district);
+// } else {
+//     console.log("Орон нутгийн оршин суугч");
+// }
+
+// ***
+
+// const student = {
+//     name: "Bat",
+//     scores: {
+//         math: 90,
+//         english: 80
+//     }
+// }
+// if (student.scores.math < 80){
+//     console.log(student.scores.math + 10);
+// } else {
+//     console.log("Нэмэлт оноо шаардлагагүй");
+// }
+
+// ***
+
+// const names = ["Bat", "Anu"]
+// const temp = names[0]
+// names [0] = names [1]
+// names [1] = temp
+
+// console.log(names);
+
+// const fruits = ["Apple", "Banana", "Orange"]
+// if (fruits.includes("Banana")){
+//     console.log("Банана байна");
+// } else {console.log("Банана алга");
+// }
+
+// ***
+
+// const students = ["Bat", "Anu", "Bold", "Saraa"]
+// console.log(students.indexOf("Bold"));
+
+// ***
+
+// const order = {
+//     product: {
+//         price: 5000,
+//         quantity: 3
+//     },
+//     delivery: {
+//         fee: 2500
+//     }
+// }
+// const productTotalPrice = order.product.price * order.product.quantity
+
+// if (order.product.price >= 20000){
+//     order.delivery.fee = 0;
+// }
+// order.total = productTotalPrice + order.delivery.fee
+
+// console.log(order.total);
+
+// ***
+
+// const user1 = {name: "Bold", age: 20}
+// const user2 = {email: "bold@example.com", city: "Улаанбаатар"}
+
+// console.log(Object.assign(user1, user2));
+
+// ***
+
+// const cart = []
+// if (cart.length === 0){
+//     console.log("Сагс хоосон");
+// } else {
+//     console.log("Сагсанд бараа байна");
+// }
+
+// ***
+
+// const numbers = [35, 45]
+// if (numbers[0] > numbers[1]){
+//     console.log(numbers[0]);
+// } else if (numbers[1] > numbers[0]){
+//     console.log(numbers[1]);
+// } else {
+//     console.log("Хоёр тоо тэнцүү");
+// }
+
+// ***
+
+// const students = ["Bat", "Anu"], newStudent = "Saruul"
+// if (students.includes(newStudent)){
+//     console.log("Энэ нэр бүртгэлтэй байна");
+// } else {
+//     students.push(newStudent);
+//     console.log(students);
+// }
+
+
+
+// ***
+
+// const user1 = { name: "Ану", age: 18 };
+// const user2 = { email: "anu@example.com", city: "Улаанбаатар" };
+
+// const newData = { ...user1, ...user2 };
+
+// console.log(newData);
+
+// ***
+
+// const groupA = ["Бат", "Ану"];
+// const groupB = ["Болд", "Сараа"];
+
+// const allStudents = [...groupA, ...groupB]
+
+// console.log(allStudents);
+
+// ***
+
+// const original = [10, 20 ,30];
+// const copy = [...original] 
+// copy[0] = 99;
+
+// console.log(`original is ${original}, copy is ${copy}`);
+
+// ***
+
+// const numbers = [10, 20, 30, 40, 50]
+// const newNumber = numbers.slice(1, 4);
+
+// console.log(newNumber);
+
+// ***
+
+// const user = { name: "Сараа", age: 22, email: "saraa@example.com" }
+// const { name, age } = user;
+// const profile = {
+//     name: name,
+//     age: age
+// };
+// profile.name = "Бат";
+
+// console.log(`profile.name is ${profile.name}, user.name is ${user.name}`);
+
+// ***
+
+// const colors = ["Улаан", "Ногоон", "Цэнхэр", "Шар"];
+// colors.splice(1, 1);
+// console.log(colors);
+
+// ***
+
+// const days = ["Даваа", "Лхагва"]
+// days.splice(1, 0, "Мягмар")
+// console.log(days);
+
+// ***
+
+// const words = ["Би", "JavaScript", "сурч", "байна."]
+// const sentence = words.join(" ")
+// console.log(sentence);
+
+// ***
+
+// const students = [{ name: "Бат", score: 75 }, { name: "Ану", score: 90 }]
+// // students[0].score += 10
+// // console.log(students[0].score);
+// // if(students[1].score >= 90){
+// //     console.log("Ану маш сайн");
+// // } else {
+// //     console.log("Ану хичээгээрэй");
+// // }
+
+// //  ***
