@@ -1416,8 +1416,6 @@
 //     console.log(students);
 // }
 
-
-
 // ***
 
 // const user1 = { name: "Ану", age: 18 };
@@ -1439,7 +1437,7 @@
 // ***
 
 // const original = [10, 20 ,30];
-// const copy = [...original] 
+// const copy = [...original]
 // copy[0] = 99;
 
 // console.log(`original is ${original}, copy is ${copy}`);
@@ -1493,3 +1491,1566 @@
 // // }
 
 // //  ***
+
+// -4
+
+// const laptop = {
+//     brand: "Lenovo",
+//     ram: 16,
+//     storage: 512
+// }
+// console.log(Object.keys(laptop));
+
+// ***
+
+// const weather = {
+//     city: "Дархан",
+//     temperature: 12,
+//     isSunny: true
+// }
+// console.log(Object.values(weather));
+
+// ***
+
+// const phone = {
+//     brand: "Samsung",
+//     model: "Galaxy",
+//     storage: 256,
+//     color: "Black"
+// }
+// console.log(Object.keys(phone).length);
+
+// ***
+
+// const settings = {};
+// if (Object.keys(settings).length === 0) {
+//   console.log("Тохиргоо оруулаагүй");
+// } else {
+//     console.log("Тохиргоо оруулсан");
+// }
+
+// ***
+
+// const size = ["S", "M", "L"]
+// console.log(size.indexOf("XL"));
+
+// ***
+
+// const steps = ["Эхлэл", "Дунд", "Төгсгөл"]
+// console.log(steps.reverse());
+
+// ***
+
+// const tags = "спорт,хөгжим,аялал"
+// console.log(tags.split(","));
+
+// ***
+
+// const playlist = {
+//     name: "Өглөө",
+//     songs: ["Нар", "Салхи", "Бороо"]
+// }
+// console.log(`${playlist.name} нэртэй жагсаалтад 3 дуу байна. Хоёр дахь дуу нь ${playlist.songs[1]}.`);
+
+// ***
+
+// const pets = [{
+//     name: "Банхар",
+//     type: "Нохой"
+// },
+// {
+//     name: "Мими",
+//     type: "Муур"
+// }
+// ]
+// console.log(`Нэр: ${pets[1].name}, төрөл: ${pets[1].type}.`);
+
+// ***
+
+// const classroom = {
+//     name: "10A",
+//     teacher: {
+//         name: "Оюун",
+//         subject: "Математик"
+//     }
+// }
+// console.log(`${classroom.name} ангийн багш ${classroom.teacher.name}. Заадаг хичээл: ${classroom.teacher.subject}.`);
+
+// ***
+
+// const store = {
+//     branches:
+//     [
+//         { name: "Төв", hours: ["09:00", "18:00"]},
+//         { name: "Баруун", hours: ["10:00", "20:00"]}
+//     ]
+// };
+
+// console.log(`${store.branches[1].name} салбар ${store.branches[1].hours[1]} цагт хаана.`);
+
+// ***
+
+// const user = {
+//     email: "anu@example.com",
+//     password: "pass123",
+//     isBlocked: false
+// }
+// const enteredEmail = "anu@example.com"
+// const enteredPassword = "pass123"
+// if (user.isBlocked == true){
+//     console.log("Хандах эрх хаагдсан");
+// } else if (user.email === enteredEmail && user.password === enteredPassword){
+//     console.log("Амжилттай нэвтэрлээ");
+// } else {
+//     console.log("И-мэйл эсвэл нууц үг буруу");
+// }
+
+// ***
+
+// const user = {
+//     role: "editor",
+//     isActive: true
+// }
+// const user1 = {role: "admin"}
+
+// if(user.isActive == false){
+//     console.log("Эрх идэвхгүй");
+// } else if(user.role === user1.role){
+//     console.log("Бүх мэдээллийг удирдана");
+// } else if(user.role){
+//     console.log("Мэдээлэл засна");
+// } else{
+//     console.log("Зөвхөн мэдээлэл үзнэ");
+// }
+
+// ***
+
+// const visitor = {
+//     age: 16,
+//     isStudent: true,
+//     ticketPrice: 12000
+// }
+
+// if (visitor.age < 12){
+//     console.log(visitor.ticketPrice * 0.5);
+// } else if (visitor.age >= 12){
+//     console.log(visitor.ticketPrice * 0.75);
+// } else {
+//     console.log(visitor.ticketPrice );
+// }
+
+// ***
+
+// const order = {
+//     subtotal: 80000,
+//     coupon: "SAVE10",
+//     couponUsed: false
+// }
+// if(order.couponUsed == true){
+//     console.log("Coupon is used");
+// } else if(order.coupon === "SAVE10" && order.subtotal >= 50000){
+//     console.log(order.subtotal * 0.9, order.couponUsed = true);
+// } else{
+//     console.log("Coupon is not available");
+// }
+
+// ***
+
+// const member = {
+//     name: "Nomin",
+//     borrowedBooks: ["Atlas", "Nuuts aral"],
+//     hasOverdue: false
+// }
+// if(member.hasOverdue == true){
+//     console.log("Dahin nom zeeluulehgui");
+// } else if(member.borrowedBooks.length < 3){
+//     member.borrowedBooks.push("Oddiin tuhai");
+//     console.log(member.borrowedBooks);
+
+// } else {
+//     console.log("Zeeleh nomiin hyzgaart hursen");
+// }
+
+// const seats = ["Sul", "Zahialsan", "Sul"]
+// const selectedIndex = 2
+// if(selectedIndex < 0 || selectedIndex >= seats.length){
+//     console.log("Суудлын дугаар буруу");
+// } else if (seats[selectedIndex] === "Sul"){
+//     seats[selectedIndex] = "Zahialsan"
+//     console.log(seats);
+// } else {
+//     console.log("Энэ суудал захиалгатай");
+// }
+
+// ***
+
+// const seats = ["Сул", "Сул", "Захиалсан", "Сул"]
+// if(seats[0] === "Сул" && seats[1] === "Сул"){
+//     seats[0] = "Захиалсан";
+//     seats[1] = "Захиалсан";
+//     console.log(seats);
+// } else {
+//     console.log("Хоёр суудлыг хамт захиалах боломжгүй");
+// }
+
+// ***
+
+// const warehouseA = {stock: 12}
+// const warehouseB = {stock: 5}
+// const transferAmount = 4
+
+// if(transferAmount > 0 && warehouseA.stock >= transferAmount){
+//
+//     console.log(`warehouseA.stock нь ${warehouseA.stock}, warehouseB.stock нь ${warehouseB.stock}`);
+// warehouseA.stock -= transferAmount;
+//     warehouseB.stock += transferAmount;
+// } else {
+//     console.log("Шилжүүлэх тоо буруу");
+// }
+
+// ***
+
+// const sender = {balance: 50000}
+// const receiver = {balance: 10000}
+// const amount = 20000
+// const fee = 500
+// if(amount > 0 && sender.balance >= amount + fee){
+//     sender.balance -= (amount + fee);
+//     receiver.balance += amount;
+//     console.log(`Илгээгчийн үлдэгдэл ${sender.balance}, хүлээн авагчийн үлдэгдэл ${receiver.balance}.`);
+// } else{
+//     console.log(sender.balance, receiver.balance);
+// }
+
+// ***
+
+// const savings = {balance: 180000, goal: 200000}
+// const deposit = 30000
+// if(deposit > 0){
+//     savings.balance +=deposit;
+//     if (savings.balance >= savings.goal){
+//         const diff = savings.balance - savings.goal;
+//         console.log(`"Зорилгодоо хүрлээ. ${diff} төгрөгөөр давсан."`);
+//     } else {
+//         const diff = savings.goal - savings.balance;
+//         console.log(`"Зорилгодоо хүрээгүй байна. ${diff} төгрөг дутуу байна."`);
+
+//     }
+// } else {
+//     console.log("Nemeh mungu eyreg baih ystoi");
+// }
+
+// ***
+
+// const registration = {
+//     document: ["Irgenii unemleh", "Tseej zurag"],
+//     isPaid: true
+// }
+// if(registration.document.length === 2 && registration.isPaid == true){
+//     console.log("Burtgel batalgaajlaa");
+// } else if(registration.document.length < 2){
+//     console.log("Barimt bicig dutuu");
+// } else {
+//     console.log("Tulbur tuluugui");
+// }
+
+// ***
+
+// const learner = {
+//     completedCourses: ["HTML", "CSS"],
+//     isActive: true
+// }
+// if(learner.completedCourses.length === 2 && learner.isActive == true){
+//     canEnroll = true
+//     console.log(canEnroll);
+// } else {
+//     canEnroll = false
+//     console.log(canEnroll);
+// }
+
+// ***
+
+// const result = {
+//     theory: 90,
+//     practice: 90
+// }
+// if(result.theory >= 60 && result.practice >= 60){
+//     console.log("Тэнцсэн");
+// } else if (result.theory < 60 && result.practice < 60){
+//     console.log("Hoyr shalgaltiig dahin ugnu");
+// } else if (result.theory < 60){
+//     console.log("Onoliin shalgaltiig dahin ugnu");
+// } else {
+//     console.log("Dadlagiin shalgaltiig dahin ugnu");
+// }
+
+// ***
+
+// const players = [
+//     {name: "Anu", score: 100, time: 45},
+//     {name: "Bat", score: 100, time: 42}
+// ];
+// const p1 = players[0];
+// const p2 = players[1];
+// if(p1.score > p2.score){
+//     console.log(`${p1.name} ylla`);
+// } else if(p2.score > p1.score){
+//     console.log(`${p2.name} ylla`);
+// } else {
+//     if(p1.time < p2.time){
+//         console.log(`${p1.name} ylla`);
+//     } else if(p2.time < p1.time){
+//         console.log(`${p2.name} ylla`);
+//     } else{
+//         console.log(Tentslee);
+//     }
+// }
+
+// ***
+
+// const product = [
+//     {name: "Devter", price: 3500},
+//     {name: "Uzeg", price: 2000},
+//     {name: "Balluur", price: 1500}
+// ]
+// const cheapest = product.reduce((min, p) => p.price < min.price ? p : min);
+// console.log(cheapest.name);
+
+// ***
+
+// const delivery = {
+//     zone: "Zahiin bus",
+//     isExpress: true
+// }
+// switch (delivery.zone){
+//     case "Tuv":
+//         fee = 3000;
+//         break;
+//     case "Zahiin bus":
+//         fee = 5000;
+//         break;
+//     case "Oron nutag":
+//         fee = 10000;
+//         break;
+//     default:
+//         console.log("hurgeltiin bus buruu");
+//         fee = null;
+// }
+
+// if(fee !== null){
+//     if (delivery.isExpress){
+//         fee += 2000;
+//     }
+//     console.log(fee);
+// }
+
+// ***
+
+// let order = {
+//   status: "Бэлтгэж байна",
+//   isPaid: true,
+//   total: 45000
+// };
+
+// if (order.status === "Хүлээгдэж байна" || order.status === "Бэлтгэж байна") {
+//   order.status = "Цуцлагдсан";
+//   order.refundAmount = order.isPaid ? order.total : 0;
+// }
+
+// console.log(`status нь "${order.status}", refundAmount нь ${order.refundAmount}.`);
+
+// ***
+
+// let purchase = {
+//   daysSincePurchase: 5,
+//   hasReceipt: true,
+//   isDamaged: false
+// };
+
+// if (purchase.daysSincePurchase > 7) {
+//   console.log("Хугацаа хэтэрсэн");
+// } else if (!purchase.hasReceipt) {
+//   console.log("Баримт байхгүй");
+// } else if (purchase.isDamaged) {
+//   console.log("Бараа гэмтсэн");
+// } else {
+//   console.log("Буцаах боломжтой");
+// }
+
+// ***
+
+// let cart = [
+//   { name: "Дэвтэр", quantity: 2, stock: 5 }
+// ];
+// let addQuantity = 3;
+
+// if (addQuantity > 0 && (cart[0].quantity + addQuantity) <= cart[0].stock) {
+//   cart[0].quantity += addQuantity;
+//   console.log(`Эхний барааны quantity нь ${cart[0].quantity}.`);
+// } else {
+//   console.log("Тоо ширхгийг нэмэх боломжгүй");
+// }
+
+// ***
+
+// -5
+
+// let cart = [
+//   { name: "Үзэг", quantity: 1 },
+//   { name: "Дэвтэр", quantity: 2 }
+// ];
+
+// if (cart.length === 0) {
+//   console.log("Хасах бараа алга");
+// } else {
+//   if (cart[0].quantity > 1) {
+//     cart[0].quantity -= 1;
+//   } else {
+//     cart.shift();
+//   }
+//   console.log(cart);
+// }
+
+// ***
+
+// let settings = { sound: true, notifications: false };
+// let selectedKey = "notifications";
+
+// if (selectedKey in settings) {
+//   settings[selectedKey] = !settings[selectedKey];
+//   console.log(settings);
+// } else {
+//   console.log("Тохиргоо олдсонгүй");
+// }
+
+// ***
+
+// let profile = { username: "nomi" };
+// let takenNames = ["admin", "guest", "bat"];
+// let newUsername = "saraa";
+
+// if (newUsername.length < 4) {
+//   console.log("Нэр хэт богино");
+// } else if (newUsername === profile.username) {
+//   console.log("Нэр өөрчлөгдөөгүй");
+// } else if (takenNames.includes(newUsername)) {
+//   console.log("Энэ нэр ашиглагдаж байна");
+// } else {
+//   profile.username = newUsername;
+//   console.log(`profile.username нь "${profile.username}".`);
+// }
+
+// ***
+
+// let file = {
+//   name: "lesson.pdf",
+//   extension: "pdf",
+//   sizeMB: 8
+// };
+
+// let allowedExtensions = ["pdf", "txt"];
+
+// if (!allowedExtensions.includes(file.extension)) {
+//   console.log("Файлын төрөл тохирохгүй");
+// } else if (file.sizeMB > 10) {
+//   console.log("Файл хэт том");
+// } else {
+//   console.log("Файлыг байршуулах боломжтой");
+// }
+
+// ***
+
+// let existingMeeting = { start: 10, end: 12 };
+// let newMeeting = { start: 11, end: 13 };
+
+// if (newMeeting.start >= newMeeting.end || existingMeeting.start >= existingMeeting.end) {
+//   console.log("Цагийн мэдээлэл буруу");
+// } else {
+//   if (newMeeting.end <= existingMeeting.start || newMeeting.start >= existingMeeting.end) {
+//     console.log("Уулзалтын цаг давхцахгүй байна");
+//   } else {
+//     console.log("Уулзалтын цаг давхцаж байна");
+//   }
+// }
+
+// ***
+
+// let character = { health: 70, maxHealth: 100, potions: 2 };
+// let healAmount = 40;
+
+// if (character.health >= character.maxHealth) {
+//   console.log("Эрүүл мэнд дүүрэн байна, эм хэрэглэхгүй");
+// } else if (character.potions <= 0) {
+//   console.log("Эм дууссан");
+// } else {
+//   character.health += healAmount;
+//   if (character.health > character.maxHealth) {
+//     character.health = character.maxHealth;
+//   }
+//   character.potions -= 1;
+//   console.log(`health нь ${character.health}, potions нь ${character.potions}.`);
+// }
+
+// ***
+
+// let mobilePlan = { remainingGB: 5, extraUsedGB: 0, allowExtra: true };
+// let requestedGB = 7;
+
+// if (requestedGB <= mobilePlan.remainingGB) {
+//   mobilePlan.remainingGB -= requestedGB;
+// } else if (mobilePlan.allowExtra) {
+//   let extraNeeded = requestedGB - mobilePlan.remainingGB;
+//   mobilePlan.remainingGB = 0;
+//   mobilePlan.extraUsedGB += extraNeeded;
+// } else {
+//   console.log("Дата хүрэлцэхгүй байна, нэмэлт хэрэглээ хаалттай");
+// }
+
+// console.log(`remainingGB нь ${mobilePlan.remainingGB}, extraUsedGB нь ${mobilePlan.extraUsedGB}.`);
+
+// ***
+
+// let parking = {hours: 3, isMember: true}
+// if (parking.hours <= 0){
+//     console.log("Hugatsaa buruu");
+// } else{
+//     let fee = 3000 + (parking.hours - 1) * 2000;
+//     if(parking.isMember){
+//         fee = fee * 0.8
+//     }
+//     console.log(fee);
+// }
+
+// ***
+
+// let contact = {email: "", phone: "99112233"}
+
+// if(contact.email.length === 0 && contact.phone){
+//     console.log(contact.phone);
+// } else if(contact.email.length){
+//     console.log(contact.email);
+// } else {
+//     console.log("Holboo barih medeelel alga");
+// }
+
+// ***
+
+// let team = {
+//     members: ["Anu", "Bat", "Saraa"],
+//     captain: "Temuulen"
+// }
+// if (team.members.length !== 3){
+//     console.log("Gishuudiin too 3 baih ystoi");
+// } else if(!team.members.includes(team.captain)){
+//     console.log("Ahlagch bagiin gishuun bish baina");
+// } else {
+//     console.log("Bag batalgaajlaa");
+// }
+
+// ***
+
+// let triangle = {sides: [5, 5, 8]};
+// let a = triangle.sides[0];
+// let b = triangle.sides[1];
+// let c = triangle.sides[2];
+
+// if (a <= 0 || b <= 0 || c <= 0 || (a + b <= c) || (a + c <= b) || (c + b <= a)){
+//     console.log("Gurvaljin uusehgui");
+// } else if(a === b && b === c){
+//     console.log("Adil talt");
+// } else if(a === b || a === c || b === c){
+//     console.log("Adil hajuut");
+// } else{
+//     console.log("Eldev talt");
+// }
+
+// ***
+
+// let account = {
+//     password: "old123",
+//     isLocked: false
+// }
+// let currentPassword = "old123"
+// let newPassword = "newpass88"
+// let confirmPassword = "newpass88"
+// if(account.isLocked == true){
+//     console.log("Account tugjidgsen baina");
+// } else if(currentPassword !== account.password){
+//     console.log("Password buruu baina");
+// } else if(newPassword.length < 8){
+//     console.log("Password 8s ih temdegtei baih ystoi");
+// } else if(newPassword !== confirmPassword){
+//     console.log("Password taarahgui baina");
+// } else{
+//     console.log(`account.password is ${newPassword}`);
+// }
+
+// ***
+
+// let account = {
+//     password: "secret123",
+//     failedAttempts: 2,
+//     isLocked: false
+// }
+// let enteredPassword = "wrong123"
+// if(account.isLocked == true){
+//     console.log("Tugjigdsen uchraas account ustaj baina");
+// } else if(enteredPassword === account.password){
+//     account.failedAttempts = 0;
+//     console.log(`failedAttempts нь ${account.failedAttempts}, Tavtai moril`);
+
+// } else{
+//     account.failedAttempts += 1
+//     account.isLocked = true;
+//     console.log(`failedAttempts нь ${account.failedAttempts}, isLocked нь ${account.isLocked}`);
+// }
+
+// ***
+
+// let notification = {
+//     isRead: false,
+//     sentCount: 2
+// }
+// if(notification.isRead == true){
+//     console.log("Dahin ilgeeh shaardlaggui");
+// } else if(notification.isRead == false && notification.sentCount < 3){
+//     notification.sentCount += 1
+//     console.log(`sentCount нь ${notification.sentCount}`);
+// } else {
+//     console.log("Ilgeeh hyzgaart hursen");
+// }
+
+// ***
+
+// let post = {
+//     hasImage: true,
+//     caption: "",
+//     isPublic: true
+// }
+// if(!post.hasImage){
+//     console.log("Zurag oruulna uu");
+// } else if(post.isPublic && post.caption === ""){
+//     console.log("Tailbar oruulna uu");
+// } else{
+//     console.log("Niitlehed belen");
+// }
+
+// ***
+
+// let comment = {
+//     authorId: 15,
+//     text: "Sonirholtoi bailaa",
+//     minutesSincePosted: 8
+// }
+// let currentUserId = 15
+// let newText = "Mash heregtei medeelel bailaa"
+// if(comment.authorId !== currentUserId){
+//     console.log("Ta uuriin setgegdliig zasah erhgui baina");
+// } else if (comment.minutesSincePosted > 10){
+//     console.log("Zasah hugatsaa duussan baina");
+// } else if (newText === ""){
+//     console.log("Shine text hooson baij bolohgui");
+// } else{
+//     comment.text = newText
+//     console.log(`comment.text нь "${comment.text}".`);
+// }
+
+// ***
+
+// let user = {
+//     friends: ["Anu", "Bat"],
+//     maxFriends: 3
+// }
+// let request = {
+//     name: "Saraa",
+//     isBlocked: false
+// }
+// if(request.isBlocked){
+//     console.log("Huselt ilgeesen hun blocklogdson baina");
+// } else if(user.friends.includes(request.name)){
+//     console.log("Ali hediin naiz");
+// } else if(user.friends.length >= user.maxFriends){
+//     console.log("naiziin too hyzgaartaa hursen baina");
+// } else {
+//     user.friends.push(request.name)
+//     console.log(user.friends);
+// }
+
+// ***
+
+// let favorites = ["Kino", "Hugjim", "Aylal"]
+// let selectedItem = "Hugjim"
+
+// let index = favorites.indexOf(selectedItem);
+// if (index !== -1){
+//     favorites.splice(index, 1);
+// } else {
+//     favorites.push(selectedItem)
+// }
+// console.log(favorites);
+
+// ***
+
+// let tasks = ["Unshih", "Bicih", "Davtah"];
+// let selectedIndex = 2
+
+// if(selectedIndex < 0 || selectedIndex >= tasks.length){
+//     console.log("Index buruu");
+// } else if (selectedIndex === 0){
+//     console.log("Tsaash deesh shiljuuleh bolomjgui");
+// } else{
+//     let temp = tasks[selectedIndex];
+//     tasks[selectedIndex] = tasks[selectedIndex - 1];
+//     tasks[selectedIndex - 1] = temp;
+// }
+
+// console.log(tasks);
+
+// ***
+
+// let players = {
+//     songs: ["Nar", "Sar", "Od"],
+//     currentIndex: 2,
+//     repeatAll: true
+// };
+
+// if(players.songs.length === 0){
+//     console.log("Tohluulah duu alga");
+// } else{
+//     if (players.currentIndex < players.songs.length - 1){
+//         players.currentIndex++;
+//         console.log(`Togluulah duu: ${players.songs[players.currentIndex]}`);
+//     } else if (players.repeatAll){
+//         players.currentIndex = 0;
+//         console.log(`currentIndex ni ${players.currentIndex}, Togluulah duu ni ${players.songs[players.currentIndex]}.`);
+//     } else {
+//         console.log("Jagsaalt duuslaa");
+//     }
+// }
+
+// ***
+
+// let pagination = {
+//     currentPage: 1,
+//     totalPage: 5
+// }
+// let action = "next"
+// if(action === "previous"){
+//     if (pagination.currentPage > 1){
+//         pagination.currentPage--;
+//     } else {
+//         console.log("Ehnii huudsand baina");
+//     }
+// } else if (action === "next"){
+//     if (pagination.currentPage < pagination.totalPage){
+//         pagination.currentPage++;
+//     } else {
+//         console.log("Suuliin huudsand baina");
+//     }
+// } else {
+//     console.log("Uildel buruu");
+// }
+// console.log(`currentPage ni ${pagination.currentPage} heveer baina.`);
+
+// ***
+
+// let inventory = {
+//     items: ["Selem", "Bambai"],
+//     capacity: 3
+// }
+// let foundItem = "Tulhuur"
+
+// if(inventory.items.includes(foundItem)){
+//     console.log("Ene zuil ali hediin baina");
+// } else if (inventory.items.length < inventory.capacity){
+//     inventory.items.push(foundItem);
+//     console.log(inventory.items);
+// } else {
+//     console.log("Tsunh duursen");
+// }
+
+// ***
+
+// let door = {
+//     isLocked: true,
+//     requiredKeyz: "Altan tulhuur",
+// }
+// let inventory = ["Ols", "Altan tulhuur"]
+
+// if(!door.isLocked){
+//     console.log("Haalga neelttei baina");
+// } else if (inventory.includes(door.requiredKeyz)){
+//     door.isLocked = false
+// } else {
+//     console.log("Tohiroh tulhuur alga");
+// }
+// console.log(door.isLocked);
+
+// ***
+
+// let player = {
+//     health: 80,
+//     shield: 30
+// }
+// let damage = 50
+
+// if(damage <= player.shield){
+//     player.shield -= damage;
+// } else{
+//     let remainingDamage = damage - player.shield;
+//     player.shield = 0;
+//     player.health -= remainingDamage;
+
+//     if (player.health < 0){
+//         player.health = 0
+//     }
+// }
+// console.log(`shield is ${player.shield}, health is ${player.health}.`);
+
+// ***
+
+// let player = {
+//     level: 4,
+//     experience: 90
+// }
+// let earnedExperience = 35
+
+// player.experience += earnedExperience
+
+// if(player.experience >= 100){
+//     player.level += 1;
+//     player.experience -= 100;
+// }
+// console.log(`level is ${player.level}, experience is ${player.experience}`);
+
+// ***
+
+// let phone = {
+//     battery: 85,
+//     isPluggedIn: true,
+//     batteryProtection: true
+// }
+
+// if(!phone.isPluggedIn){
+//     console.log(Tsenegleegui);
+// } else if (phone.batteryProtection && phone.battery >= 80){
+//     console.log("Tseneglehiig tur zogsooson");
+// } else if (!phone.batteryProtection && phone.battery === 100){
+//     console.log("Tseneglehiig zogsooson");
+// } else{
+//     console.log("Tseneglej baina");
+// }
+
+// ***
+
+// let room = {
+//     temperature: 17,
+//     targetTemperature: 22,
+//     isWindowOpen: true,
+//     heaterOn: false
+// }
+
+// if (room.isWindowOpen){
+//     room.heaterOn = false
+// } else if (room.temperature < room.targetTemperature){
+//     room.heaterOn = true
+// } else{
+//     room.heaterOn = false
+// }
+// console.log(`room heaterOn is ${room.heaterOn}`);
+
+// ***
+
+// let elevator = {
+//     currentWeight: 420,
+//     maxWeight: 500,
+//     currentPeople: 5,
+//     maxPeople: 6
+// }
+// let personWeight = 85
+
+// let newTotalWeight = elevator.currentWeight + personWeight;
+// let newTotalPeople = elevator.currentPeople + 1;
+
+// if(newTotalWeight <= elevator.maxWeight && newTotalPeople <= elevator.maxPeople){
+//     elevator.currentWeight = newTotalWeight;
+//     elevator.currentPeople = newTotalPeople;
+//     console.log(`Liftend amjilttai orloo. Jin: ${elevator.currentWeight}, Hunii too: ${elevator.currentPeople}`);
+// } else{
+//     console.log("Liftent oroh bolomjgui");
+
+// }
+// console.log(`Jin: ${elevator.currentWeight}, Hunii too: ${elevator.currentPeople}`);
+
+// ***
+
+// let baggage = {
+//     weight: 27,
+//     hasPriority: false
+// }
+
+// if(baggage.weight > 32){
+//     console.log("Achaag huvaah shaardlagatai");
+// } else{
+//     let freeLimit = baggage.hasPriority ? 30 : 20;
+
+//     if(baggage.weight > freeLimit){
+//         let extraWeight = baggage.weight - freeLimit
+//         let totalfee = extraWeight * 5000;
+//         console.log(totalfee);
+//     } else {console.log(0);
+//     }
+// }
+
+// ***
+
+// let car = ['ford', "toyota", "mercedes", "chevrolet", "tesla", "byd"]
+
+// if (car.includes("toyota")){
+//     console.log("toyota baina");
+// } else {
+//     console.log("toyota baihgui baina");
+// }
+
+// ***
+
+// ---Shine hicheel
+// --6
+
+// for( let i = 1; i <= 10; i++){
+//     console.log(i);
+// }
+
+// ***
+
+// for(let i = 10; i >= 1; i--){
+//     console.log(i);
+// }
+
+// ***
+
+// let fruits = ["Alim", "Banana", "Jurj"]
+
+// for(i = 0; i < fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+
+// ***
+
+// for(let i = 2; i <= 20; i += 2){
+//     console.log(i);
+// }
+
+// ***
+
+// for(let i = 1; i <= 20; i += 2){
+//     console.log(i);
+// }
+
+// ***
+
+// const word = "hello"
+// for(let i = 0; i < word.length; i++){
+//     console.log(word[i]);
+// }
+
+// ***
+
+// let sum = 0;
+// for(let i = 1; i <= 100; i++){
+//     sum += i;
+// }
+// console.log(sum);
+
+// ***
+
+// let sum = 0;
+// for(let i = 2; i <= 100; i += 2){
+//     sum += i
+// }
+// console.log(sum);
+
+// ***
+
+// let squares = []
+// for(i = 1; i <= 10; i++){
+//     squares.push(i ** 2)
+// }
+// console.log(squares);
+
+// ***
+
+// let num = [5, 10, 15, 20];
+// let sum = 0;
+// for(let i = 0; i < num.length; i++){
+//     sum += num[i];
+// }
+// console.log(sum);
+
+// ***
+
+// let num = [10, 20, 30, 40];
+// let sum = 0;
+// for(let i = 0; i < num.length; i++){
+//     sum += num[i]
+// }
+// let average = sum / num.length;
+
+// console.log(average);
+
+// ***
+
+// let word = "school";
+// let count = 0
+// for(let i = 0; i < word.length; i++){
+//     count++
+// }
+// console.log(count);
+
+// ***
+
+// let numbers = [3, 8, 12, 5, 6, 7];
+// let even = 0;
+// for(let i = 0; i < numbers.length; i++){
+//     if (numbers[i] % 2 === 0){
+//         even++;
+//     }
+// }
+// console.log(even);
+
+// ***
+
+// for(let i = 3; i <= 50; i += 3){
+//     console.log(i);
+// }
+
+// ***
+
+// for(let i = 1; i <= 100; i++){
+//     if(i % 3 === 0 && i % 5 === 0){
+//         console.log(i);
+//     }
+// }
+
+// ***
+
+// let word = "hello"
+// for(let i = word.length - 1; i >= 0; i--){
+//     console.log(word[i]);
+// }
+
+// ***
+
+// let word = "Banana";
+// let letter = "a"
+// let sum = 0
+// for(let i = 0; i < word.length; i++){
+//     if (word[i] === letter){
+//         sum++;
+//     }
+// }
+// console.log(sum);
+
+// ***
+
+// for(let i = 5; i <= 50; i+=5){
+//     console.log(i);
+// }
+
+// ***
+
+// for(let i = 100; i >= 0; i-=10){
+//     console.log(i);
+// }
+
+// ***
+
+// let sentence = "Би JavaScript сурч байна"
+// let sum = 0
+// for(let i = 0; i < sentence.length; i++){
+//     if (sentence[i] === " "){
+//         sum++;
+//     }
+// }
+// console.log(sum);
+
+// ***
+
+// let a = 2;
+// let b = 5;
+// let result = 1;
+// for(let i = 0; i < b; i++){
+//     result *= a;
+// }
+// console.log(result);
+
+// ***
+
+// let n = 5;
+// let factorial = 1;
+// for(let i = 1; i <= n; i++){
+//     factorial *= i;
+// }
+// console.log(factorial);
+
+// ***
+
+// let word = "education";
+// let count = 0;
+// for(let i = 0; i < word.length; i++){
+//     let char = word[i];
+//     if(char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u'){
+//         count++;
+//     }
+// }
+// console.log(count);
+
+// ***
+
+// let number = 5;
+// for(let i = 1; i <= 10; i++){
+//     console.log(number + "x" + i + "=" + number * i);
+// }
+
+// ***
+
+// let numbers = [4, 7, 2, 7, 9];
+// let target = 7;
+// let index = -1;
+
+// for(let i = 0; i < numbers.length; i++){
+//     if(numbers[i] === target){
+//         index = i;
+//         break;
+//     }
+// }
+// console.log(index);
+
+// ***
+
+// let word = "JavaScript";
+// let count = 0;
+// for(let i = 0; i < word.length; i++){
+//     let asciiCode = word.charCodeAt(i);
+//     if(asciiCode >= 65 && asciiCode <= 90){
+//         count++;
+//     }
+// }
+// console.log(count);
+
+// ***
+
+// let number = 12;
+// let huvaagch = [];
+// for(let i = 1; i <= number; i++){
+//     if(number % i === 0){
+//         huvaagch.push(i);
+//     }
+// }
+// console.log(huvaagch);
+
+// ***
+
+// for(let i = 1; i <= 5; i++){
+//     console.log("*".repeat(i));
+// }
+
+// ***
+
+// let numbers = [5, 12, 20, 8]
+// for(let i = 0; i < numbers.length; i++){
+//     numbers[i] += 10
+// }
+// console.log(numbers);
+
+// ***
+
+// let booleans = [false, false, true, true];
+// let newboo = [];
+// for(let i = 0; i < booleans.length; i++){
+//     newboo.push(true);
+// }
+// console.log(newboo);
+
+// ***
+
+// let products = [{ title: "Уут", price: 500 }, { title: "Сав", price: 800 }];
+// for(let i = 0; i < products.length; i++){
+//     if(products[i].price > 600){
+//         console.log(products[i]);
+//     }
+// }
+
+// ***
+
+// let employees = [{ name: "Амгалан", department: "IT" }, { name: "Номин", department: "HR" }]
+// for(let i = 0; i < employees.length; i++){
+//     console.log(employees[i].name);
+// }
+
+// ***
+
+// let students = [{ name: "Бат", score: 85 }, { name: "Сара", score: 92 }]
+// for(let i = 0; i < students.length; i++){
+//     if(students[i].score > 90){
+//         console.log(students[i].name);
+//     }
+// }
+
+// ***
+
+// let products = [{ title: "Уут", stock: 5 }, { title: "Сав", stock: 0 }]
+// for(let i = 0; i < products.length; i++){
+//     if(products[i].stock !== 0){
+//         console.log(products[i]);
+//     }
+// }
+
+// ***
+
+// let books = [{ title: "Монгол түүх", year: 2000 }, { title: "Газар зүй", year: 2010 }]
+// for(let i = 0; i < books.length; i++){
+//     if(books[i].year > 2005){
+//         console.log(books[i]);
+//     }
+// }
+
+// ***
+
+// let students = [{ name: "Бат", age: 20 }, { name: "Сара", age: 22 }]
+// let average = 0
+// for(let i = 0; i < students.length; i++){
+//     average += students[i].age;
+// }
+// let averageAge = average / students.length;
+// console.log(averageAge);
+
+// ***
+
+// let products = [
+//   { title: "Уут", price: 500 },
+//   { title: "Сав", price: 800 },
+// ];
+// let updated = [];
+// for (let i = 0; i < products.length; i++) {
+//   let niitUne = {
+//     title: products[i].title,
+//     price: (products[i].price * 1.1).toFixed(0),
+//   };
+//   updated.push(niitUne);
+// }
+// console.log(updated);
+
+// ***
+
+// let employees = [
+// { name: "Амгалан", salary: 1000, active: true, department: "IT" },
+// { name: "Номин", salary: 1500, active: false, department: "HR" },
+// { name: "Баяр", salary: 1200, active: true, department: "IT" }
+// ];
+// let totalSalary = 0;
+// let activeCount = 0;
+// for(let i = 0; i < employees.length; i++){
+//     if(employees[i].active === true){
+//         totalSalary += employees[i].salary;
+//         activeCount++;
+//     }
+// }
+// if(activeCount > 0){
+//     let averageSalary = totalSalary / activeCount;
+//     console.log(averageSalary);
+// } else {
+//     console.log("Idevhtei ajiltan baihgui");
+// }
+
+
+// While loop
+// --7
+
+// let water = 0
+// let capacity = 20
+// let bucket = 4
+// let count = 0
+// while (water < capacity){
+//     water += bucket;
+//     count++;
+// }
+// console.log(count);
+
+// ***
+
+// let battery = 35
+// let target = 100
+// let rate = 5
+// let minutes = 0
+// while (battery < target){
+//     battery += rate;
+//     minutes++;
+// }
+// console.log(minutes);
+
+// ***
+
+// let battery = 100
+// let cost = 15
+// let games = 0
+// while (battery >= cost){
+//     battery -= cost;
+//     games++;
+// }
+// console.log(`${games} toglolt, ${battery} negj`);
+
+// ***
+
+// let temperature = 30
+// let target = 22
+// let cost = 2
+// let minutes = 0
+// while (temperature > target){
+//     temperature -= cost;
+//     minutes++;
+// }
+// console.log(minutes);
+
+// ***
+
+// let floor = 2
+// let targetfloor = 7
+
+// while(floor < targetfloor){
+//     floor++;
+//     console.log(floor);
+// }
+
+// ***
+
+// let tickets = 17
+// let bagts = 3
+// let sales = 0
+
+// while(tickets > bagts){
+//     tickets -= bagts;
+//     sales++;
+// }
+// console.log(`${sales} bagts, ${tickets} tasalbar`);
+
+// ***
+
+// let items = 38
+// let boxCapacity = 6
+// let box = 0
+// while(items > 0){
+//     items -= boxCapacity;
+//     box++;
+// }
+// console.log(box);
+
+// ***
+
+// let paper = 23
+// let pagesPerDocument = 5
+// let document = 0
+// while(paper > pagesPerDocument){
+//     paper -= pagesPerDocument;
+//     document++;
+// }
+// console.log(`${document} barimt, ${paper} huudas`);
+
+// ***
+
+// let health = 50
+// let damage = 12
+// let punch = 0
+// while(health > 0){
+//     health -= damage;
+//     punch++;
+// }
+// console.log(punch);
+
+// ***
+
+// let number = 23
+// let divisor = 5
+// let noogdvor = 0
+// while(number > divisor){
+//     number -= divisor;
+//     noogdvor++;
+// }
+// console.log(`Noogdvor: ${noogdvor}, Uldegdel: ${number}`);
+
+// ***
+
+
+// let number = 160
+// let udaa = 0
+// while(number > 10){
+//     number /= 2;
+//     udaa++;
+// }
+// console.log(`${udaa} udaa, Etssiin utga ${number}`);
+
+// ***
+
+
+// let number = 472
+// let result = 0
+// while(number > 0){
+//     const lastDigit = number % 10;
+//     result += lastDigit;
+//     number = Math.floor(number / 10)
+// }
+// console.log(result);
+
+// ***
+
+// let number = 234
+// let result = 1
+// while(number > 0){
+//     const lastDigit = number % 10;
+//     result *= lastDigit;
+//     number = Math.floor(number / 10)
+// }
+// console.log(result);
+
+// ***
+
+// let number = 5724
+// let targetDigit = 7
+// let found = false
+// while(number > 0){
+//     const lastDigit = number % 10;
+//     if(lastDigit === targetDigit){
+//         found = true;
+//         break;
+//     }
+//     number = Math.floor(number / 10);
+// }
+// console.log(found);
+
+// ***
+
+// let numbers = [4, 7, 3, 0, 9, 2]
+// let sum = 0
+// let i = 0
+// while(i < numbers.length && numbers[i] !== 0){
+//     sum += numbers[i];
+//     i++;
+// }
+// console.log(sum);
+
+// ***
+
+// let numbers = [5, 8, 2, -1, 7]
+// let howMany = 0
+// let i = 0
+// while(i < numbers.length && numbers[i] >= 0){
+//     howMany++;
+//     i++;
+// }
+// console.log(howMany);
+
+// ***
+
+// let prices = [3000, 5000, 4000, 2000]
+// let money = 10000
+// let product = 0
+// let i = 0
+// while(i < prices.length && money >= prices[i]){
+//     money -= prices[i];
+//     product++;
+//     i++;
+// }
+// console.log(`${product} baraa, ${money} tugrug`);
+
+// ***
+
+// let seats = [true, true, false, true, false]
+// let index = -1
+// let i = 0
+// while(i < seats.length){
+//     if(seats[i] === false){
+//         index = i;
+//         break;
+//     }
+//     i++;
+// }
+// console.log(index);
+
+// ***
+
+// let tasks = ["Имэйл шалгах", "Тайлан бичих", "Код шалгах"]
+// while(tasks.length > 0){
+//     let finishedTask = tasks.shift();
+//     console.log(`Duussan: ${finishedTask}`);
+// }
+// console.log(tasks);
+
+// ***
+
+// let durations = [15, 20, 10, 25]
+// let availableMinutes = 50
+// let lesson = 0
+// let i = 0
+// while(i < durations.length && availableMinutes >= durations[i]){
+//     availableMinutes -= durations[i];
+//     lesson++;
+//     i++;
+// }
+// console.log(`${lesson} hicheel, ${availableMinutes} minute uldene`);
+
+// ***
+
+// --8
+
+// let number = 0
+// do{
+//     console.log(number);
+//     number--;
+// } while(number >= 0);
+    
+// ***
+
+// let notifications = 0
+// do{
+//     console.log("Medegdel shalgaj baina");
+//     notifications--;
+// } while(notifications > 0);
+
+// ***
+
+// let dice;
+// do{
+//     dice = Math.floor(Math.random() * 6) + 1;
+//     console.log(dice);
+// } while(dice !== 6)
+
+// ***
+
+// let coin;
+// do{
+//     coin = Math.floor(Math.random() * 2);
+//     if(coin === 0){
+//         console.log("Suld");
+//     } else {
+//         console.log("Too");
+//     }
+// } while(coin !== 0)
+
+// ***
+
+// let randomNumber;
+// do{
+//     randomNumber = Math.floor(Math.random() * 10) + 1;
+//     console.log(randomNumber);   
+// } while(randomNumber % 2 !== 0);
+
+// ***
+
+let dice;
+let attempts = 0
+do{
+    dice = Math.floor(Math.random() * 6) + 1;
+    attempts++;
+    console.log(dice);
+} while(dice !== 6 && attempts < 5);
+console.log(`Niit ${attempts} udaa haysan`);
