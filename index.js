@@ -2763,7 +2763,6 @@
 //     console.log("Idevhtei ajiltan baihgui");
 // }
 
-
 // While loop
 // --7
 
@@ -2880,7 +2879,6 @@
 
 // ***
 
-
 // let number = 160
 // let udaa = 0
 // while(number > 10){
@@ -2890,7 +2888,6 @@
 // console.log(`${udaa} udaa, Etssiin utga ${number}`);
 
 // ***
-
 
 // let number = 472
 // let result = 0
@@ -3007,7 +3004,7 @@
 //     console.log(number);
 //     number--;
 // } while(number >= 0);
-    
+
 // ***
 
 // let notifications = 0
@@ -3041,16 +3038,298 @@
 // let randomNumber;
 // do{
 //     randomNumber = Math.floor(Math.random() * 10) + 1;
-//     console.log(randomNumber);   
+//     console.log(randomNumber);
 // } while(randomNumber % 2 !== 0);
 
 // ***
 
-let dice;
-let attempts = 0
-do{
-    dice = Math.floor(Math.random() * 6) + 1;
-    attempts++;
-    console.log(dice);
-} while(dice !== 6 && attempts < 5);
-console.log(`Niit ${attempts} udaa haysan`);
+// let dice;
+// let attempts = 0
+// do{
+//     dice = Math.floor(Math.random() * 6) + 1;
+//     attempts++;
+//     console.log(dice);
+// } while(dice !== 6 && attempts < 5);
+// console.log(`Niit ${attempts} udaa haysan`);
+
+// ***
+
+// ---9
+// let result = "";
+// for(let i = 1; i <= 5; i++){
+//     for(let j = 1; j <= 3; j++){
+//         result += i + " ";
+//     }
+// }
+// console.log(result);
+
+// ***
+
+// for(let i = 1; i <= 3; i++){
+//     let result = "";
+//     for(let j = 1; j <= 4; j++){
+//     result += j + " ";
+// }
+// console.log(result);
+// }
+
+// ***
+
+// for(let i = 1; i <= 5; i++){
+//     let result = "";
+//     for(let j = 1; j <= i; j++){
+//         result += i + " ";
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// for(let i = 1; i <= 5; i++){
+//     for(let j = 1; j <= 10; j++){
+//         console.log(`${i} x ${j} = ${i * j}`);
+//     }
+// }
+
+// ***
+
+// for(let a = 1; a <= 3; a++){
+//     for(let b = 1; b <= 3; b++){
+//         console.log(`(${a}, ${b})`);
+//     }
+// }
+
+// ***
+
+// for(let a = 1; a <= 5; a++){
+//     for(let b = 1; b <= 5; b++){
+//         if(a + b === 6){
+//             console.log(`(${a}, ${b})`);
+//         }
+//     }
+// }
+
+// ***
+
+// for(let a = 1; a <= 4; a++){
+//     for(let b = 1; b <= 4; b++){
+//         if(a < b){
+//             console.log(`(${a}, ${b})`);
+//         }
+//     }
+// }
+
+// ***
+
+// for(let a = 1; a <= 10; a++){
+//     let result = "";
+//     for(let b = 1; b <= 10; b++){
+//         if(a % b === 0){
+//             result += b + " ";
+//         }
+//     }
+//     console.log(a + ">" + result);
+
+// }
+
+// ***
+
+// for(let i = 1; i <= 5; i++){
+//     let factorial = 1;
+//     for(let j = 1; j <= i; j++){
+//         factorial *= j;
+//     }
+//     console.log(factorial);
+// }
+
+// ***
+
+// let size = 4
+// for(let i = 1; i <= size; i++){
+//     let result = "";
+//     for(let j = 1; j <= size; j++){
+//         result += "* ";
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// let rows = 3;
+// let columns = 6;
+// for(let i = 1; i <= rows; i++){
+//     let result = "";
+//     for(let j = 1; j <= columns; j++){
+//         result += "* ";
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// for(let i = 1; i <= 5; i++){
+//     let result = ""
+//     for(let j = 1; j <= i; j++){
+//         result += j + " "
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// let number = 1;
+// for(let i = 1; i <= 3; i++){
+//     let result = "";
+//     for(let j = 1; j <= 4; j++){
+//         result += number + " ";
+//         number++
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// for (let i = 1; i <= 5; i++) {
+//   let result = "";
+//   for (let j = 1; j <= 5; j++) {
+//     if (i === 1 || i === 5 || j === 1 || j === 5) {
+//       result += "* ";
+//     } else {
+//       result += "  ";
+//     }
+//   }
+//   console.log(result);
+// }
+
+// ***
+
+// for (let i = 1; i <= 5; i++) {
+//   let result = "";
+//   for (let j = 1; j <= 5; j++) {
+//     if (i === j) {
+//       result += "* ";
+//     } else {
+//       result += ". ";
+//     }
+//   }
+//   console.log(result);
+// }
+
+// ***
+
+// for (let i = 0; i < 4; i++){
+//     let result = "";
+//     for(let j = 0; j < 4; j++){
+//         result += (i + j) % 2 + " "
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// let counts = [2, 4, 1, 3];
+// for (let i = 0; i < counts.length; i++){
+//     let result = ""
+//     for(let j = 0; j < counts[i]; j++){
+//         result += "*"
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// let words = ["cat", "dog", "sun"];
+// for (let i = 0; i < words.length; i++){
+//     for(let j = 0; j < words[i].length; j++){
+//         console.log(words[i][j]);
+//     }
+// }
+
+// ***
+
+// let words = ["cat", "dog", "sun"];
+// for (let i = 0; i < words.length; i++){
+//     let result = ""
+//     for(let j = words[i].length - 1; j >= 0; j--){
+//         result += words[i][j]
+//     }
+//     console.log(result);
+// }
+
+// ***
+
+// let a = [1, 2];
+// let b = [10, 20, 30];
+// for (let i = 0; i < a.length; i++){
+//     for(let j = 0; j < b.length; j++){
+//         console.log(a[i] + b[j]);
+//     }
+// }
+
+// ***
+
+// let numbers = [1, 2, 3, 4];
+// for (let i = 0; i < numbers.length; i++){
+//     for(let j = i + 0; j < numbers.length; j++){
+//         if(numbers[i] + numbers[j] === 5){
+//             console.log(`(${numbers[i]}, ${numbers[j]})`);
+            
+//         }
+//     }
+// }
+
+// ***
+
+// let matrix = [[1, 2], [3, 4], [5, 6]];
+// for (let i = 0; i < matrix.length; i++){
+//     for(let j = 0; j < matrix[i].length; j++){
+//         console.log(matrix[i][j]);
+//     }
+// }
+
+// ***
+
+// let matrix = [[1, 2, 4], [5, 6, 9]];
+// let count = 0
+// for (let i = 0; i < matrix.length; i++){
+//     for(let j = 0; j < matrix[i].length; j++){
+//         if(matrix[i][j] % 2 === 0){
+//             count++;
+//         }
+//     }
+//     }
+//     console.log(count);
+
+// ***
+
+// let matrix = [[1, 2, 3], [4, 5, 6]];
+// let target = 5
+// for (let i = 0; i < matrix.length; i++){
+//     for(let j = 0; j < matrix[i].length; j++){
+//         if(matrix[i][j] === target){
+//             console.log("Мөр:" + i + ", багана:" + j);
+//         }
+//     }
+// }
+
+// ***
+
+// let teams = [{ name: "А баг", members: ["Бат", "Сара"] }, { name: "Б баг", members: ["Номин", "Баяр"] }];
+// for (let i = 0; i < teams.length; i++){
+//     for(let j = 0; j < teams[i].members.length; j++){
+//         console.log(teams[i].name + ": " + teams[i].members[j]);
+//     }
+// }
+
+// ***
+
+// let seats = [[1, 0, 1], [0, 0, 1], [1, 1, 0]];
+// let count = 0;
+// for (let i = 0; i < seats.length; i++){
+//     for(let j = 0; j < seats[i].length; j++){
+//         if(seats[i][j] === 0){
+//             count++;
+//         }
+//     }
+// }
+// console.log(count);
