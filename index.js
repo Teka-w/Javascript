@@ -3273,7 +3273,7 @@
 //     for(let j = i + 0; j < numbers.length; j++){
 //         if(numbers[i] + numbers[j] === 5){
 //             console.log(`(${numbers[i]}, ${numbers[j]})`);
-            
+
 //         }
 //     }
 // }
@@ -3333,3 +3333,1043 @@
 //     }
 // }
 // console.log(count);
+
+// ---10
+
+// const greet = (name) => {
+//     return "Сайн уу," + name + "!";
+// }
+// console.log(greet("Teka"));
+
+// ***
+
+// const getLength = (word) => {
+//     return word.length;
+// }
+// console.log(getLength("apple"));
+
+// ***
+
+// const toUpper = (text) => {
+//     return text.toUpperCase()
+// }
+// console.log(toUpper("javascript"));
+
+// ***
+
+// const toLower = (text) => {
+//     return text.toLowerCase();
+// }
+// console.log(toLower("HELLO"));
+
+// ***
+
+// const getFirstLetter = (word) => {
+//     return word.charAt(0);
+// }
+// console.log(getFirstLetter("banana"));
+
+// ***
+
+// const getLastLetter = (word) => {
+//     return word.at(-1);
+// }
+// console.log(getLastLetter("wow"));
+
+// ***
+
+// const joinWords = (first, second) => {
+//     return first.concat(" ", second);
+// }
+// console.log(joinWords("hello","world"));
+
+// ***
+
+// const cleanText = (text) => {
+//     return text.trim();
+// }
+// console.log(cleanText("hello "));
+
+// ***
+
+// const repeatWord = (word, count) => {
+//     return word.repeat(count);
+// }
+// console.log(repeatWord("lol", 3));
+
+// ***
+
+// const reverseWord = (word) => {
+//     return word.split("").reverse().join("")
+// }
+// console.log(reverseWord("teka"));
+
+// ***
+
+// const getPrefix = (word) => {
+//     return word.slice(0, 3)
+// }
+// console.log(getPrefix("javascript"));
+
+// ***
+
+// const getEnding = (word) => {
+//     return word.slice(-2)
+// }
+// console.log(getEnding("Hello"));
+
+// ***
+
+// const capitalize = (word) => {
+//     return word.charAt(0).toUpperCase() + word.slice(1);
+// }
+// console.log(capitalize("hello"));
+
+// ***
+
+// let count = 0;
+// const countVowels = (word) => {
+//     for(let i = 0; i < word.length; i++){
+//         if("aeiou".includes(word[i])){
+//             count++;
+//         }
+//     }
+//     return count
+// }
+// console.log(countVowels("education"));
+
+// ***
+
+// const countSpace = (word) => {
+//     return word.split(" ").length -1
+// }
+// console.log(countSpace("Hello"));
+
+// ***
+
+// const multiply = (a, b) => {
+//     return a * b;
+// }
+// console.log(multiply(3,7));
+
+// ***
+
+// const square = (number) => {
+//     return Math.pow(number, 2)
+// }
+// console.log(square(3));
+
+// ***
+
+// const getMax = (a, b) => {
+//     return Math.max(a, b);
+// }
+// console.log(getMax(100, 23));
+
+// ***
+
+// const sumDigits = (number) => {
+//     let sum = 0
+//     let digits = number.toString().split("")
+//     for(let i = 0; i < digits.length; i++){
+//         sum += Number(digits[i])
+//     }
+//     return sum
+// }
+// console.log(sumDigits(105));
+
+// ***
+
+// const calculateAge = (yearOfBirth) => {
+//     let currentYear = new Date().getFullYear()
+//     return currentYear - yearOfBirth
+// }
+// console.log(calculateAge(2010));
+
+// ***
+
+// const calculateDiscountedPrice = (price, discount) => {
+//     return price - price * discount / 100;
+// }
+// console.log(calculateDiscountedPrice(20000, 10));
+
+// ***
+
+// const calculatePerimeter = (width, height) => {
+//     return (width + height) * 2;
+// }
+// console.log(calculatePerimeter(3, 8));
+
+// ***
+
+// const convertHours = (hours) => {
+//     return hours * 60;
+// }
+// console.log(convertHours(1.5));
+
+// ***
+
+// const reverseNumber = (number) => {
+//     return Number(number.toString().split("").reverse().join(""))
+// }
+// console.log(reverseNumber(50));
+
+// ***
+
+// const calculateSum = (n) => {
+//     return n * (n + 1) / 2
+// }
+// console.log(calculateSum(10));
+
+// ***
+
+// const calculateFactorial = (n) => {
+//     let result = 1;
+//     for(let i = 1; i <= n; i++){
+//         result *= i
+//     }
+//     return result
+// }
+// console.log(calculateFactorial(5));
+
+// ***
+
+// const calculatePower = (base, exponent) => {
+//     return Math.pow(base, exponent);
+// }
+// console.log(calculatePower(7,0));
+
+// ***
+
+// const isEven = (number) => {
+//     return number % 2 === 0
+// }
+// console.log(isEven(4));
+
+// ***
+
+// const isEqual = (a, b) => {
+//     return a === b;
+// }
+// console.log(isEqual("hi","hi"));
+
+// ***
+
+// const isDivisibleByFive = (number) => {
+//     return number % 5 === 0;
+// }
+// console.log(isDivisibleByFive(0));
+
+// ***
+
+// const getFullName = ({ firstName, lastName }) => {
+//   return lastName + " " + firstName;
+// };
+// console.log(getFullName({ lastName: "Болд", firstName: "Бат" }));
+
+// ***
+
+// const getProductTotal = ({price, quantity}) => {
+//     return price * quantity;
+// }
+// console.log(getProductTotal({ price: 1200, quantity: 3 }));
+
+// ***
+
+// const createUser = (name, age) => {
+//     return{
+//         name: name,
+//         age: age
+//     }
+// }
+// console.log(createUser("Bat",20));
+
+// ***
+
+// const isStudentPassed = (student) => {
+//     return student.score >= 60;
+// }
+// console.log(isStudentPassed({ score: 85 }));
+
+// ***
+
+// const getCity = (user) => {
+//     return user.address.city
+// }
+// console.log(getCity({ address: { city: "Дархан" } }));
+
+// ***
+
+// const getRectangleArea = (rectangle) => {
+//     return rectangle.width * rectangle.height
+// }
+// console.log(getRectangleArea(rectangle = { width: 4, height: 6 }));
+
+// ***
+
+// const getProductValues = (product) => {
+//     return Object.values(product)
+// }
+// console.log(getProductValues(product = { title: "Ном", price: 5000 }));
+
+// ***
+
+// const sumArray = (numbers) => {
+//     let sum = 0;
+//     for(let i = 0; i < numbers.length; i++){
+//         sum += numbers[i]
+//     }
+//     return sum
+// }
+// console.log(sumArray([]));
+
+// ***
+
+// const findMin = (numbers) => {
+//     return Math.min(...numbers);
+// }
+// console.log(findMin([-3, -8, -1]));
+
+// ***
+
+// const getEvenNumbers = (numbers) => {
+//     let result = []
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] % 2 === 0){
+//             result.push(numbers[i])
+//         }
+//     }
+//     return result
+// }
+// console.log(getEvenNumbers([1, 2, 3, 4]));
+
+// ***
+
+// const getNegativeNumbers = (numbers) => {
+//     let result = []
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] < 0){
+//             result.push(numbers[i])
+//         }
+//     }
+//     return result
+// }
+// console.log(getNegativeNumbers([-2, 3, -5, 0]));
+
+// ***
+
+// const sumEvenNumbers = (numbers) => {
+//     let sum = 0
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] % 2 === 0){
+//             sum += numbers[i]
+//         }
+//     }
+//     return sum
+// }
+// console.log(sumEvenNumbers([1, 3, 5]));
+
+// ***
+
+// const uppercaseWords = (words) => {
+//   let result = [];
+//   for (let i = 0; i < words.length; i++) {
+//     result.push(words[i].toUpperCase());
+//   }
+//   return result;
+// };
+// console.log(uppercaseWords(["cat", "dog"]));
+
+// ***
+
+// const combineArrays = (firstArray, secondArray) => {
+//     return firstArray.concat(secondArray)
+// }
+// console.log(combineArrays(firstArray = [1, 2], secondArray = [3, 4]));
+
+// ***
+
+// const getExpensiveProducts = (products) => {
+//     let result = []
+//     for(let i = 0; i < products.length; i++){
+//         if(minPrice < products[i].price){
+//             result.push(products[i])
+//         }
+//     }
+//     return result
+// }
+// console.log(getExpensiveProducts(products = [{ title: "Аяга", price: 2000 }, { title: "Сав", price: 5000 }], minPrice = 3000));
+
+// ***
+
+
+// ---11
+
+// const printLabel = (text) => {
+//     console.log("[".concat(text, "]"));
+// }
+// printLabel("Шинэ")
+
+// ***
+
+// const printLetterPositions = (word) => {
+//     for(let i = 0; i < word.length; i++){
+//         console.log((i + 1) + ": " + word.charAt(i));
+//     }
+// }
+// printLetterPositions("sun")
+
+// ***
+
+// const printEverySecondLetter = (word) => {
+//     for(let i = 1; i < word.length; i+=2){
+//         console.log(word.charAt(i));   
+//     }
+// }
+// printEverySecondLetter("abcdef")
+
+// ***
+
+// const printHiddenPhone = (phone) => {
+//     console.log(phone.slice(-4).padStart(8, "*"));
+// }
+// printHiddenPhone("88114455")
+
+// ***
+
+// const printReplacedText = (text, oldWord, newWord) => {
+//     console.log(text.replace(oldWord, newWord));
+// }
+// printReplacedText("red car", "red", "blue")
+
+// ***
+
+// const printWords = (sentence) => {
+//     let words = sentence.split(" ")
+//     for(let i = 0; i < words.length; i++){
+//         console.log(words[i]);
+//     }
+// }
+// printWords("We learn JavaScript")
+
+// ***
+
+// const printHashtag = (phrase) => {
+//     console.log("#" + phrase.replaceAll(" ", ""));
+// }
+// printHashtag("Learn JavaScript")
+
+// ***
+
+// const printConsonants = (word) => {
+//     for(let i = 0; i < word.length; i++){
+//         let letter = word.charAt(i).toLowerCase()
+//         if(!"aeiou".includes(letter)){
+//             console.log(letter);
+//         }
+//     }
+// }
+// printConsonants("dog")
+
+// ***
+
+// const printDivision = (a, b) => {
+//     console.log("Buhel heseg:", Math.floor(a / b));
+//     console.log("Uldegdel:", a % b);
+// }
+// printDivision(17, 5)
+
+// ***
+
+// const printDecimal = (number) => {
+//     console.log(number.toFixed(2));
+// }
+// printDecimal(3.14159)
+
+// ***
+
+// const printFahrenheit = (celsius) => {
+//     let fahrenheit = celsius * 9 / 5 + 32
+//     console.log(fahrenheit + "ºF");
+// }
+// printFahrenheit(100)
+
+// ***
+
+// const printHeight = (height) => {
+//     let meters = Math.floor(height / 100)
+//     let centimeters = height % 100
+//     console.log(meters + "m " + centimeters + "cm");
+// }
+// printHeight(175)
+
+// ***
+
+// const printWeight = (grams) => {
+//     let kg = Math.floor(grams / 1000)
+//     let g = grams % 1000
+//     console.log(kg + "kg " + g + "g");
+// }
+// printWeight(2500)
+
+// ***
+
+// const printDistance = (a, b) => {
+//     console.log(Math.abs(a - b));
+// }
+// printDistance(3, 10)
+
+// ***
+
+// const printBoxCount = (itemCount, capacity) => {
+//     console.log(Math.ceil(itemCount / capacity));
+// }
+// printBoxCount(14, 6)
+
+// ***
+
+// const printPageCount = (itemCount, pageSize) => {
+//     console.log(Math.ceil(itemCount / pageSize));
+// }
+// printPageCount(1,10)
+
+// ***
+
+// const printSavingMonths = (target, monthlySaving) => {
+//     console.log(Math.ceil(target / monthlySaving));   
+// }
+// printSavingMonths(100,500)
+
+// ***
+
+// const printRoundedValues = (number) => {
+//     console.log("Floor:", Math.floor(number));
+//     console.log("Ceil:", Math.ceil(number));
+// }
+// printRoundedValues(8.7)
+
+// ***
+
+// const printBatteryStatus = (percent) => {
+//     if(percent <= 20){
+//         console.log("Tseneg Baga");
+//     } else if(percent <= 80){
+//         console.log("Tseneg Heviin");
+//     } else{
+//         console.log("Tseneg Undur");
+//     }
+// }
+// printBatteryStatus(90)
+
+// ***
+
+// const printTrafficInstruction = (color) => {
+//     if(color === "red"){
+//         console.log("Zogs");
+//     } else if(color === "yellow"){
+//         console.log("Beld");
+//     } else{
+//         console.log("Yv");
+//     }
+// }
+// printTrafficInstruction("red")
+
+// ***
+
+// const printWaterState = (temperature) => {
+//     if(temperature < 0){
+//         console.log("Mus");
+//     } else if(temperature < 100){
+//         console.log("Shingen Us");
+//     } else{
+//         console.log("Uur");
+//     }
+// }
+// printWaterState(-5)
+
+// ***
+
+// const printRating = (rating) => {
+//     if(rating <= 2){
+//         console.log("Saijruulah heregtei");
+//     } else if(rating === 3){
+//         console.log("Dundaj");
+//     } else{
+//         console.log("Sain");
+//     }
+// }
+// printRating(4)
+
+// ***
+
+// const printUploadStatus = (sizeMB) => {
+//     if(sizeMB <= 10){
+//         console.log("Huulj bolno");
+//     } else{
+//         console.log("File het tom");
+//     }
+// }
+// printUploadStatus(12)
+
+// ***
+
+// const printUsernameStatus = (username) => {
+//     if(username.length >= 4 && username.length <= 12){
+//         console.log("Нэрийн урт тохиромжтой");
+//     } else {
+//         console.log("4–12 тэмдэгт оруулна уу");
+//     }
+// }
+// printUsernameStatus("ab")
+
+// ***
+
+// const printMatchResult = (homeScore, awayScore) => {
+//     if(homeScore > awayScore){
+//         console.log("Талбайн эзэд хожлоо");
+//     } else if(homeScore < awayScore){
+//         console.log("Зочин баг хожлоо");
+//     } else{
+//         console.log("Тэнцлээ");
+//     }
+// }
+// printMatchResult(3,1)
+
+// ***
+
+// const printElevatorDirection = (currentFloor, targetFloor) => {
+//     if(targetFloor > currentFloor){
+//         console.log("Дээш явна");
+//     } else if(targetFloor < currentFloor){
+//         console.log("Доош явна");
+//     } else{
+//         console.log("Энэ давхарт байна");
+//     }
+// }
+// printElevatorDirection(4,4)
+
+// ***
+
+// const printStorageStatus = (used, capacity) => {
+//     if(used < capacity){
+//         console.log("Зай байна");
+//     } else if(used === capacity){
+//         console.log("Дүүрсэн");
+//     } else {
+//         console.log("Багтаамж хэтэрсэн");
+//     }
+// }
+// printStorageStatus(120,100)
+
+// ***
+
+// const printPaymentStatus = (isPaid, isCancelled) => {
+//     if(isCancelled){
+//         console.log("Цуцлагдсан");
+//     } else if(isPaid){
+//         console.log("Баталгаажсан");
+//     } else{
+//         console.log("Төлбөр хүлээж байна");
+//     }
+// }
+// printPaymentStatus(false,false)
+
+// ***
+
+// const changePrice = (product, newPrice) => {
+//     Object.assign(product, {
+//         price: newPrice
+//     })
+//     console.log(product);
+// }
+// changePrice({ title: "Дэвтэр", price: 2000 }, 2500)
+
+// ***
+
+// const completeTask = (task) => {
+//     task.completed = true
+//     console.log(task);
+// }
+// completeTask({ title: "Унших", completed: false })
+
+// ***
+
+// const addPhone = (contact, phone) => {
+//     Object.assign(contact, {
+//         phone: phone
+//     })
+//     console.log(contact);
+// }
+// addPhone({ name: "Болд" }, "99112233")
+
+// ***
+
+// const removePassword = (account) => {
+//     delete account.password
+//     console.log(account);
+// }
+// removePassword({ username: "bold", password: "abc" })
+
+// ***
+
+// const restock = (product, amount) => {
+//     product.stock += amount
+//     console.log(product);
+// }
+// restock({ stock: 10 }, 7)
+
+// ***
+
+// const addToCart = (cart, item) => {
+//     cart.push(item)
+//     console.log(cart);
+// }
+// addToCart(["Сүү"], "Талх")
+
+// ***
+
+// const serveNext = (queue) => {
+//     let person = queue.shift()
+//     console.log("Үйлчлүүлсэн: " + person);
+//     console.log(queue);
+// }
+// serveNext(["Ану", "Бат", "Номин"])
+
+// ***
+
+// const removeLastItem = (items) => {
+//     items.pop()
+//     console.log(items);
+// }
+// removeLastItem(["Улаан", "Ногоон", "Хөх"])
+
+// ***
+
+// const replaceItem = (items, index, newValue) => {
+//     items.splice(index, 1, newValue)
+//     console.log(items);
+// }
+// replaceItem([10, 20], 0, 5)
+
+// ***
+
+// const completeAll = (tasks) => {
+//     for(let i = 0; i < tasks.length; i++){
+//         Object.assign(tasks[i], {
+//             done: true
+//         })
+//     }
+//     console.log(tasks);
+// }
+// completeAll([{ title: "A", done: false }])
+
+// ***
+
+// const printEmailUsername = (email) => {
+//     let username = email.split("@").at(0)
+//     console.log(username);
+// }
+// printEmailUsername("bold@example.com")
+
+// ***
+
+// const swapEnds = (items) => {
+//     let first = items.shift()
+//     let last = items.pop()
+
+//     items.unshift(last)
+//     items.push(first)
+//     console.log(items);
+// }
+// swapEnds([1, 2, 3, 4])
+
+// ***
+
+// ---12
+
+// const greetlater = (delay) => {
+//     setTimeout(() => {
+//         console.log("Сайн байна уу!");
+//     }, delay)
+// }
+// greetlater(1000)
+
+// ***
+
+// const notifications = (firstDelay) => {
+//     console.log("Эхний мэдэгдэл");
+// }
+// const notifications2 = (secondDelay) => {
+//     console.log("Хоёр дахь мэдэгдэл");
+// }
+// setTimeout(notifications, 1000)
+// setTimeout(notifications2, 3000)
+
+// ***
+
+// let stepDelay = 500
+// const step1 = () => {
+//     console.log("Номоо нээ");
+// }
+// const step2 = () => {
+//     console.log("Бодлогоо унш");
+// }
+// const step3 = () => {
+//     console.log("Бодож эхэл");
+// }
+// setTimeout(step1, stepDelay)
+// setTimeout(step2, stepDelay * 2)
+// setTimeout(step3, stepDelay * 3)
+
+// ***
+
+// let a = 12
+// let b = 8
+// const calculate = () => {
+//     console.log(a + b);
+// }
+// console.log("Тооцоолж байна...");
+// setTimeout(calculate, 2000)
+
+// ***
+
+// let status = "Хүлээгдэж байна"
+// let nextStatus = "Баталгаажсан"
+// const changeStatus = () => {
+//     status = nextStatus
+//     console.log(status);
+// }
+// setTimeout(changeStatus, 2000)
+
+// ***
+
+// const readNotification = (notification) => {
+//     setTimeout(() => {
+//         notification.isRead = true
+//         console.log(notification);
+//     }, 3000)
+// }
+// readNotification({ text: "Хичээл", isRead: false })
+
+// ***
+
+// const addItemLater = (cart, item) => {
+//     setTimeout(() => {
+//         cart.push(item)
+//         console.log(cart);
+//     }, 2000)
+// }
+// addItemLater(["Алим"], "Жүрж")
+
+// ***
+
+// const homeworkReminder = (hasHomework, delay) => {
+//     if(hasHomework){
+//         setTimeout(() => {
+//             console.log("Гэрийн даалгавраа хийгээрэй");
+//         }, delay)
+//     }
+// }
+// homeworkReminder(true, 3000)
+
+// ***
+
+// const checkSubmission = (isSubmitted, delay) => {
+//     setTimeout(() => {
+//         if(isSubmitted){
+//             console.log("Даалгавар илгээгдсэн");
+//         } else{
+//             console.log("Даалгавраа илгээнэ үү");
+//         }
+//     }, delay)
+// }
+// checkSubmission(false, 1000)
+
+// ***
+
+// const cancelNotification = (delay) => {
+//     let timer = setTimeout(() => {
+//         console.log("Мэдэгдэл");
+//     }, delay)
+//     clearTimeout(timer)
+//     console.log("Мэдэгдлийг цуцаллаа");
+// }
+// cancelNotification(1000)
+
+// ***
+
+// const cancelAlarm = (alarmDelay, cancelDelay) => {
+//     let alarm = setTimeout(() => {
+//         console.log("Seruuleg dugarlaa");
+//     }, alarmDelay)
+//     setTimeout(() => {
+//         clearTimeout(alarm)
+//         console.log("Seruulgiig untraalaa");
+//     }, cancelDelay)
+// }
+// cancelAlarm(5000, 2000)
+
+// ***
+
+// const sayHello = (limits) => {
+//     let count = 0
+//     let timer = setInterval(() => {
+//         console.log("Сайн уу!");
+//         count++
+//         if(count >= limits){
+//             clearInterval(timer)
+//         }
+// }, 1000)
+// }
+// sayHello(3)
+
+// ***
+
+// const countUp = (limits) => {
+//     let count = 0
+//     let timer = setInterval(() => {
+//         count++
+//         console.log(count);
+//         if(count >= limits){
+//             clearInterval(timer)
+//         }
+//     }, 1000)
+// }
+// countUp(5)
+
+// ***
+
+// const countDown = (start) => {
+//     let count = start
+//     let timer = setInterval(() => {
+//         console.log(count);
+//         count--
+//         if(count === 0){
+//             clearInterval(timer)
+//         }
+//     }, 1000)
+// }
+// countDown(3)
+
+// ***
+ 
+// const printEvenNumbers = (end) => {
+//    let number = 2;
+//    let timer = setInterval(() => {
+//        console.log(number);
+//        if (number >= end) {
+//            clearInterval(timer);
+//        } else {
+//            number += 2;
+//        }
+//    }, 500);
+// };
+// printEvenNumbers(18);
+
+// ***
+
+// const countByFive = (end) => {
+//    let number = 5;
+//    let timer = setInterval(() => {
+//        console.log(number);
+//        if (number >= end) {
+//            clearInterval(timer);
+//        } else {
+//            number += 5;
+//        }
+//    }, 1000);
+// };
+// countByFive(15);
+
+// ***
+
+const download = (step) => {
+   let progress = 0;
+   let timer = setInterval(() => {
+       progress += step;
+       if (progress > 100) {
+           progress = 100;
+       }
+       console.log("Таталт: " + progress + "%");
+       if (progress >= 100) {
+           clearInterval(timer);
+       }
+   }, 1000);
+};
+download(1);
+
+// ***
+
+
+// const startCountdown = (start) => {
+//    let count = start;
+//    let timer = setInterval(() => {
+//        console.log(count);
+//        count--;
+//        if (count === 0) {
+//            clearInterval(timer);
+//            setTimeout(() => {
+//                console.log("Эхэл!");
+//            }, 1000);
+//        }
+//    }, 1000);
+// };
+// startCountdown(3);
+
+// ***
+
+
+// const delivery = (distance) => {
+//    setTimeout(() => {
+//        console.log("Хүргэлт эхэллээ");
+//        let timer = setInterval(() => {
+//            distance--;
+//            console.log(distance);
+//            if (distance === 0) {
+//                clearInterval(timer);
+//                console.log("Хүргэлт ирлээ");
+//            }
+//        }, 1000);
+//    }, 2000);
+// };
+// delivery(3);
+
+// ***
+
+// const game = (duration) => {
+//    let score = 0;
+//    let timer = setInterval(() => {
+//        score += 10;
+//        console.log(score);
+//    }, 500);
+//    setTimeout(() => {
+//        clearInterval(timer);
+//        console.log("Эцсийн оноо: " + score);
+//    }, duration);
+// };
+// game(2600);
+
+// ***
+
+
+// const pauseCounter = (pauseAt, end) => {
+//    let count = 0;
+//    let timer = setInterval(() => {
+//        count++;
+//        console.log(count);
+//        if (count === pauseAt) {
+//            clearInterval(timer);
+//            setTimeout(() => {
+//                console.log("Үргэлжилж байна");
+//                timer = setInterval(() => {
+//                    count++;
+//                    console.log(count);
+//                    if (count >= end) {
+//                        clearInterval(timer);
+//                    }
+//                }, 1000);
+//            }, 2000);
+//        }
+//    }, 1000);
+// };
+// pauseCounter(3, 6);
